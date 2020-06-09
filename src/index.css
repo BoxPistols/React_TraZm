@@ -14,3 +14,8 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+#likeCount_Article{
+  user-select: none;
+  font-size: 24px;
+}
