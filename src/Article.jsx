@@ -2,10 +2,18 @@ import React from 'react'
 
 const Article = (props) => {
   return(
-    <div>
+    <>
+
+      <p>
+        <label htmlFor="checkArticle">公開状態：</label>
+        <input id="checkArticle" type="checkbox"
+               checked={props.isPublished}
+               onClick={()=>props.toggle()}
+        />
+      </p>
       <p>記事：{props.title}</p>
       <p>閲覧数：{props.view}</p>
-    </div>
+    </>
   )
 }
 // class Article extends React.Component{
