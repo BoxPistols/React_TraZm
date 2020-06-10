@@ -66,3 +66,41 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/de
 ### `yarn build` fails to minify
 
 This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+
+---
+
+# Doc Code
+
+## module js
+
+Foo.js(no name function / React推奨)
+```js
+export default function Foo(){}
+  return (<p>foo</p>)
+```
+
+Bar.js(const arrow function)
+```js
+const Bar = () =>{
+  return (<p>boo</p>)
+}
+export default Bar
+```
+
+Hoge.js(Class export)
+```js
+export default Hoge extends fuga{
+ render(){
+   return (<p>Hoge</p>)
+ }
+}
+```
+
+### Multi Select import
+` import {Foo, Bar} from 'FooBar'`
+
+### Change Name module
+
+`import Article * as AnotherName from './Article'`
+
+`import {foo as anotherFoo} fron 'Foo'`
