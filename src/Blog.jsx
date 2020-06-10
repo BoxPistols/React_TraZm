@@ -1,6 +1,10 @@
 import React from 'react' // react自体の読み込み
 // Article(子コンポーネント読み込み)
 import Article from './Article'
+
+import {Foo, Bar} from './components/FooBar'
+import Hoge from './components/Hoge'
+
 // Classコンポーネント≠ Functional component
 class Blog extends React.Component { // className extends React.Component= UpperCase
   constructor(props) { // reset set props
@@ -48,6 +52,9 @@ class Blog extends React.Component { // className extends React.Component= Upper
     return( // return value(xxx)
       <>
         <p>Content</p>
+        <p><Foo/></p>
+        <p><Bar/></p>
+        <p><Hoge/></p>
         <p>
           <Article
             title={'React特集'} // val
