@@ -2,7 +2,8 @@ import React from 'react' // react自体の読み込み
 // Article(子コンポーネント読み込み)
 import Article from './Article'
 
-import {Foo, Bar} from './components/FooBar'
+// import {Foo, Bar} from './components/FooBar'
+import * as FooBar from './components/FooBar'
 import Hoge from './components/Hoge'
 
 // Classコンポーネント≠ Functional component
@@ -52,8 +53,8 @@ class Blog extends React.Component { // className extends React.Component= Upper
     return( // return value(xxx)
       <>
         <p>Content</p>
-        <p><Foo/></p>
-        <p><Bar/></p>
+        <p><FooBar.Foo/></p>
+        <p><FooBar.Bar/></p>
         <p><Hoge/></p>
         <p>
           <Article
