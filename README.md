@@ -104,3 +104,37 @@ export default Hoge extends fuga{
 `import Article * as AnotherName from './Article'`
 
 `import {foo as anotherFoo} fron 'Foo'`
+
+---
+
+## React Hooks
+
+### Why?
+- to simple about life cycle
+
+### What
+- useEffect() Method / change of LifeCycle
+- LifeCycle Setting Mix in OnePoint
+- Can use Functional Component
+- mix code on function <-> not set on lifeCycle
+- Run on every render
+
+Change of these components
+- componentDidMount()
+- componentDidUpdate()
+- componentWillUnmount()
+
+|               | mount     | update     | unmount      |   |
+|:-------------:|-----------|------------|--------------|---|
+| constructor() |     ○     |            |              |   |
+| render()      |     ○     |      ○     |              |   |
+|               | cDidMount | cDidUpdate | WillUnmount  |   |
+
+```js
+useEffect(() => { // callback mount
+ console.log('Reader') // update
+ return () => { // unmount = cleanup function
+  console.log('Unmount')
+ }
+}
+```
