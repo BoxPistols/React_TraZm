@@ -110,7 +110,7 @@ export default Hoge extends fuga{
 ## React Hooks
 
 ### Why?
-- to simple about life cycle
+- to simple about life cycle & Clear [this] / [state]
 
 ### What
 - useEffect() Method / change of LifeCycle
