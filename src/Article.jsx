@@ -1,4 +1,5 @@
 import React, {useState} from 'react'
+import LikeButton from './components/LikeButton'
 
 const Article = (props) => {
   const [isPublished, togglePublished] = useState(false)
@@ -17,6 +18,7 @@ const Article = (props) => {
                onClick={()=>togglePublished(!isPublished)}
         />
       </p>
+      <p id={"counter"}><LikeButton/></p>
     </>
   )
 }

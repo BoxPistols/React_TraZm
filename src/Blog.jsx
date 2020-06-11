@@ -6,7 +6,7 @@ const Blog = () => {
     <>
       <p>
         <Article
-          title={'React特集'} // val
+          title={'React特集'}
         />
       </p>
     </>
